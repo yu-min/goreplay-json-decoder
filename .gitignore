@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+# Potentially sensitive real-world capture files and decoded artifacts
+*.gor
+*.pcap
+*.pcapng
+*_decoded.json
+*_decoded_report.json
+*_decoded_files/
+*results.zip
+traffic*.json
+traffic*.jsonl
+
+# Build artifacts and temporary reports
+dist/
+build/
+*.egg-info/
+.coverage
+.tox/
+*.zip

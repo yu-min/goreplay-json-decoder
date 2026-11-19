@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "goreplay-json-decoder"
+version = "1.1.0"
+description = "Decode Base64, compressed, text and Protocol Buffers payloads in JSON HTTP captures"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+keywords = ["goreplay", "http", "json", "base64", "snappy", "protobuf", "decoder"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+goreplay-json-decoder = "goreplay_decoder:main"
+
+[tool.setuptools]
+py-modules = ["goreplay_decoder"]
